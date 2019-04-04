@@ -20,20 +20,20 @@ messages[ operations.PLUS ] = [
     set: [
       'Congrats!',
       'Got it!',
-      'Bravo.',
-      'Oh well done.',
+      'Bravo!',
+      'Oh well done!',
       'Nice work!',
-      'Well done.',
-      'Exquisite.',
-      'Lovely.',
-      'Superb.',
+      'Well done!',
+      'Exquisite!',
+      'Lovely!',
+      'Superb!',
       'Classic!',
-      'Charming.',
-      'Noted.',
+      'Charming!',
       'Well, well!',
-      'Well played.',
-      'Sincerest congratulations.',
-      'Delicious.'
+      'Well played!',
+      'Sincerest congratulations!',
+      'Amazing!',
+      'Fantastic!'
     ]
   },
   {
@@ -69,7 +69,8 @@ messages[ operations.SELF ] = [
       'Hahahahahahaha no.',
       'Nope.',
       'No. Just no.',
-      'Not cool!'
+      'Not cool!',
+      'Hold onto your ego!'
     ]
   },
   {
@@ -96,7 +97,7 @@ const getRandomMessage = ( operation, item, score = 0 ) => {
   switch ( operation ) {
     case operations.MINUS:
     case operations.PLUS:
-      format = '<message> *<item>* is now on <score> point<plural>.';
+      format = '<message> *<item>* `<score>`';
       break;
 
     case operations.SELF:
